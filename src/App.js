@@ -1,7 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
-
 import{ useEffect, useState } from 'react';
+import {Route, Switch } from 'react-router-dom';
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -17,9 +15,16 @@ const App = () => {
   }, [])
 
   return (
-    <div className="App">
-     {products.map(product => <li key={product.name}>{product.name}</li>)}
-    </div>
+    <>
+      <Switch>
+        <Route exact path='/' component={} />
+        <Route exact path='/products' component={} />
+        <Route exact path='/products/wedding' component={} />
+        <Route exact path='/products/mens' component={} />
+        <Route exact path='/products/womens' component={} />
+        <Route exact path='/products/' component={} />
+      </Switch>
+    </>
   );
 }
 
