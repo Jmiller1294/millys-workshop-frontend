@@ -8,18 +8,43 @@ import WomensBoxes from './pages/WomensBoxes';
 import WeddingBoxes from './pages/WeddingBoxes';
 import { createGlobalStyle } from 'styled-components';
 import logo from './assets/logo-black.png';
+import searchIcon from './assets/search.png';
+import cartIcon from './assets/shopping-cart.png';
+import accountIcon from './assets/user.png';
 import styled from 'styled-components';
 
-const NavContainer = styled.div`
+const LogoContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  height: 128px;
+  height: 120px;
+  width: 100%;
 `
 const  Logo = styled.img`
-  height: 250px;
-  width: 220px;
+  height: 120px;
+  width: 250px;
+`
+const Icon = styled.img`
+  height: 20px;
+  margin: 0 10px;
+  width: 20px;
+`
+const IconCont = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  height: 20px;
+  width: 33.3%;
+`
+const GhostDiv = styled.div`
+  height: 30px;
+  width: 33.3%;
+  display: flex;
+`
+const Header = styled.header`
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  width: 100%;
 `
 
 export const GlobalStyle = createGlobalStyle`
@@ -36,10 +61,18 @@ const App = () => {
  
   return (
     <>
-      <NavContainer>
-        <Logo src={logo} />
+      <Header>
+        <LogoContainer>
+          <GhostDiv></GhostDiv>
+          <Logo src={logo} />
+          <IconCont>
+            <Icon src={searchIcon} />
+            <Icon src={cartIcon} />
+            <Icon src={accountIcon} />
+          </IconCont>
+        </LogoContainer>
         <NavBar />
-      </NavContainer>
+      </Header>
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/products' element={<Products />} />

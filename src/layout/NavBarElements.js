@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 128px;
+  height: 30px;
   padding: 0 25px;
   font-weight: bold;
   justify-content: center;
