@@ -14,9 +14,23 @@ export const Nav = styled.nav`
   align-items: center;
 `
 export const NavLink = styled(Link)`
-  padding: 0 20px 10px 20px;
+  margin: 0 20px 10px 20px;
+  padding-bottom: 10px;
   color: #000000;
   text-decoration: none;
+  letter-spacing: 2.5px;
+  border: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid black;
+    -moz-transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+  }
+
+ 
 `
 export const NavBtn = styled.nav`
   align-self: center;
@@ -24,7 +38,7 @@ export const NavBtn = styled.nav`
   height: 55%;
   width: 8%;
   margin-right: 24px;
-  text-align: center;
+  text-align: center; 
 `
 export const NavBtnLink = styled(Link)`
   display: flex;

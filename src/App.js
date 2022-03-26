@@ -17,8 +17,9 @@ const LogoContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 120px;
+  height: 110px;
   width: 100%;
+  margin-top: 10px;
 `
 const  Logo = styled.img`
   height: 120px;
@@ -53,7 +54,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     margin: 0;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   } 
 `
 
