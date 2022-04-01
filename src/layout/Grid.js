@@ -8,6 +8,7 @@ export const Row = styled.div`
   min-height: ${ (props) => props.minHeight};
   height: ${ (props) => props.height};
   background: ${ (props) => props.background};
+  padding: ${ (props) => props.padding};
 `
 export const Col = styled.div`
   flex: ${ (props) => props.size};
