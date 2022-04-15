@@ -24,12 +24,13 @@ const Home = () => {
         <Row height={'100px'}>
           <Header>Featured</Header>
         </Row>
-        <Row height={'750px'} minHeight={'450px'} padding={'45px'}>
+        <Row height={'650px'} minHeight={'450px'} padding={'45px'}>
           <Card></Card>
           <Card></Card>
           <Card></Card>
           <Card></Card>
         </Row>
+        
       </Grid>
     </>
   )

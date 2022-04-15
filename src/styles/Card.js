@@ -23,17 +23,35 @@ const CardImg = styled.img`
   height: 55%;
 `
 const CardInfo = styled.div`
-  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  line-height: 1.5;
   height: 110px;
+`
+const Button = styled.button`
+  width: 95%;
+  height: 40px;
+  background-color: #FFFFFF;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
 `
 
 const Card = () => {
   return (
     <CardCont>
       <CardImg src={giftImg} />
-      <label>Gift Box</label>
-      <label>type</label>
-      <label>$15.00</label>
+      <CardInfo>
+        <b>Gift Box</b>
+        <label>Holiday</label>
+        <label>$15.00</label>
+      </CardInfo>
+      <Button>add to cart</Button>
     </CardCont>
   )
 }
