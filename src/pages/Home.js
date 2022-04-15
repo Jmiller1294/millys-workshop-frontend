@@ -14,7 +14,8 @@ const Banner = styled.img`
   width: 100%;
 `
 const Header = styled.h2`
-  margin: 60px auto;
+ 
+  margin: 75px auto 0 auto;
   letter-spacing: 2.5px;
 `
 const BannerCon = styled.div`
@@ -23,12 +24,12 @@ const BannerCon = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 800px;
   margin: 45px;
 `
 const SmallBanner = styled.img`
-  width: 650px;
-  height: 340px;
+  width: 660px;
+  height: 370px;
 `
 
 const Home = () => {
@@ -38,10 +39,10 @@ const Home = () => {
         <Row height={'450px'} minHeight={'450px'}>
           <Banner src={banner} />
         </Row>
-        <Row height={'100px'}>
+        <Row height={'150px'}>
           <Header>Featured</Header>
         </Row>
-        <Row height={'600px'} minHeight={'450px'} padding={'45px 45px 0 45px'}>
+        <Row height={'600px'} minHeight={'450px'} padding={'0 45px'}>
           <Card></Card>
           <Card></Card>
           <Card></Card>
@@ -54,6 +55,18 @@ const Home = () => {
             <SmallBanner src={bannerPic3}></SmallBanner>
             <SmallBanner src={bannerPic4}></SmallBanner>
           </BannerCon>
+        </Row>
+        <Row height={'150px'}>
+          <Header>New Boxes</Header>
+        </Row>
+        <Row height={'600px'} minHeight={'450px'} padding={'0 45px'}>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+        </Row>
+        <Row height={'600px'} minHeight={'450px'} padding={'0 45px'}>
+          
         </Row>
       </Grid>
     </>
