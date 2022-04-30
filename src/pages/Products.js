@@ -15,7 +15,7 @@ const Products = () => {
 
   return(
     <div>
-      
+      Shop All
     </div>
   )
 }

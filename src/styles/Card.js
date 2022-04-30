@@ -14,7 +14,6 @@ const CardCont = styled.div`
   max-width: 400px;
   margin: 10px;
 `
-
 const CardImg = styled.img`
   display: flex;
   flex-direction: column;
