@@ -58,17 +58,20 @@ const Tile = styled.img`
 `
 const ContactForm = styled.form`
   display: flex;
+  justify-content: center;
   height: 100px;
   flex-basis: 50%;
+  margin-top: 30px;
 `
 const ContactInput = styled.input`
-  height: 100px;
-  flex-basis: 75%;
+  
+  height: 50px;
+  flex-basis: 40%;
 `
 
-const SubmitButton = styled.input`
-  height: 100px;
-  flex-basis: 25%;
+const SubmitButton = styled.button`
+  height: 50px;
+  flex-basis: 15%;
 `
 const IconCon = styled.div`
   display: flex;
@@ -128,7 +131,13 @@ const Home = () => {
   
         </Row>
         <Row height={'500px'} minHeight={'450px'} padding={'0 45px'}>
-          <Title>Hello</Title>
+          <Col size={1}>
+            <Title>Join Our Newsletter</Title>
+            <ContactForm>
+              <ContactInput type={'text'}/>
+              <SubmitButton>Join</SubmitButton>
+            </ContactForm>
+          </Col>
         </Row>
         <Row>
 
